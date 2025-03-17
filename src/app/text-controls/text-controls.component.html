@@ -1,0 +1,28 @@
+<div class="fontsContainer" [style.width.dvw]="cardWidth" [style.minWidth.%]="15">
+    <p [style.fontSize.px]="fontSize" 
+        [style.fontFamily]="selectedFont" 
+        [style.color]="colortext" 
+    
+    class="text">
+        {{text}}
+    </p>
+
+    <select class="fontList"  [(ngModel)]="selectedFont">
+        <option *ngFor="let font of fontList" [value]="font">{{ font }}</option>
+    </select>
+    <label for="textInput"></label>
+
+    <textarea name="textInput" [(ngModel)]="text" id="textInput"></textarea>
+
+    <div>
+        <label for="fontSize">Font Size</label>
+        <input type="number" name="fontSize" [(ngModel)]="fontSize" min="10" max ="40" id="fontSize" (input)="updateText(fontSize)">
+    </div>
+    <div>
+        <label for="colortext">Text Colour</label>
+        <input type="color" name="colortext" [(ngModel)]="colortext" id="colortext">
+    </div>
+    <div><label for="cardWidth">Width of card</label>
+        <input type="number" name="cardWidth" [(ngModel)]="cardWidth" min="15" max="100" id="cardWidth">
+    </div>
+</div>

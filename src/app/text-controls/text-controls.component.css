@@ -1,0 +1,43 @@
+
+.fontsContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50dvw;
+    align-items: center;
+    }
+
+    textarea, select, p{
+        height: 2em;
+        margin: 10px;
+    }
+    .fontsContainer div {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+    }
+    label{
+        width: 200px;
+        height: 2em;
+    }
+    input, 
+    textarea, 
+    select, 
+    p{
+        margin: 10px;
+        height: 2em;
+        width: inherit;
+    }
+    
+    input:hover, 
+    textarea:hover, 
+    select:hover, 
+    p:hover{
+        /* font-weight: 600; */
+        transition: 100ms;
+        color: #633;
+    }
+    input[type="color"]{
+        height: 3em;
+        margin: auto 20px;
+    }

@@ -1,0 +1,7 @@
+.text-card-container{
+    background-color: #eee;
+    border: 2px solid olive;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 4px;
+}
